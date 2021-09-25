@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Japanese Menu"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="right"
+            android:layout_weight="2"
+            android:src="@drawable/sushi_logo" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="430dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sides"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/red"
+                android:textSize="30dp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salt Edamame"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Edamame, Salt."
+                    android:textSize="20dp"
+                    android:layout_weight="2"
+                    android:textStyle="italic"></TextView>
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="30 SR"
+                    android:buttonTint="@color/red"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"></CheckBox>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dynamite Shrimp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Shrimp, Spicy sauce, French sauce, Green onion, Sesame,Latus."
+                    android:textSize="20dp"
+                    android:layout_weight="2"
+                    android:maxLines="5"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="italic"></TextView>
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:gravity="center"
+                    android:buttonTint="@color/red"
+                    android:layout_weight="1"
+                    android:text="37 SR"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"></CheckBox>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rocky Shrimp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Shrimp, bread-crumbs, Rocky sauce, Green onion, Sesame seed."
+                    android:textSize="20dp"
+                    android:layout_weight="2"
+                    android:maxLines="5"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="italic"></TextView>
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/red"
+                    android:text="38 SR"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"></CheckBox>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempura"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/red"
+                android:textSize="30dp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempura Roll- 4 Pieces"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tempura, Seaweed, Rie Sesame."
+                    android:textSize="20dp"
+                    android:layout_weight="2"
+                    android:textStyle="italic"></TextView>
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="25 SR"
+                    android:buttonTint="@color/red"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"></CheckBox>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempura Roll- 8 Pieces"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tempura, Seaweed, Rie Sesame."
+                    android:textSize="20dp"
+                    android:layout_weight="2"
+                    android:textStyle="italic"></TextView>
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="39 SR"
+                    android:buttonTint="@color/red"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"></CheckBox>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cheese Tempura Roll- 4 Pieces"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tempura, Seaweed,Rie Sesame,Cheese."
+                    android:textSize="20dp"
+                    android:layout_weight="2"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="5"
+                    android:textStyle="italic"></TextView>
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="27 SR"
+                    android:buttonTint="@color/red"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"></CheckBox>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cheese Tempura Roll- 8 Pieces"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tempura, Seaweed,Rie Sesame,Cheese."
+                    android:textSize="20dp"
+                    android:layout_weight="2"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="5"
+                    android:textStyle="italic"></TextView>
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/red"
+                    android:text="43 SR"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"></CheckBox>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Noodles"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/red"
+                android:textSize="30dp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shrimp Noodles"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Noodles, Shrimp,Cabbage,Carrots,Mushroom bell pepper,Green pepper,Garlic,Green Onion."
+                    android:textSize="20dp"
+                    android:maxLines="5"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="2"
+                    android:textStyle="italic"></TextView>
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/red"
+                    android:text="35 SR"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"></CheckBox>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chicken Noodles"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Noodles, Chicken,Cabbage,Carrots,Mushroom bell pepper,Green pepper,Garlic,Green Onion."
+                    android:textSize="20dp"
+                    android:layout_weight="2"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="5"
+                    android:textStyle="italic"></TextView>
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:buttonTint="@color/red"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="32 SR"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"></CheckBox>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:text="Place Order"></Button>
+</LinearLayout>
